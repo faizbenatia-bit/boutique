@@ -1,0 +1,96 @@
+/* ===================
+   STYLE GENERAL
+=================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background:#f8f9fa;
+}
+
+/* ===================
+   HERO SECTION
+=================== */
+
+.hero{
+    background:url("https://images.unsplash.com/photo-1512436991641-6745cdb1723f")
+    center/cover no-repeat;
+
+    height:80vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+    color:white;
+}
+
+.hero-content{
+    background:rgba(0,0,0,0.6);
+    padding:30px;
+    border-radius:10px;
+}
+
+.hero h1{
+    font-size:3rem;
+}
+
+.hero p{
+    margin:15px 0;
+    font-size:1.2rem;
+}
+
+/* ===================
+   PRODUITS
+=================== */
+
+.product-card{
+    transition:0.3s;
+    border:none;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.product-card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    height:200px;
+    object-fit:cover;
+}
+
+/* ===================
+   FOOTER
+=================== */
+
+footer{
+    background:#212529;
+    color:white;
+    padding:20px;
+}
+
+/* ===================
+   RESPONSIVE
+=================== */
+
+@media(max-width:768px){
+
+    .hero{
+        height:60vh;
+    }
+
+    .hero h1{
+        font-size:2rem;
+    }
+
+    .hero p{
+        font-size:1rem;
+    }
+
+}
